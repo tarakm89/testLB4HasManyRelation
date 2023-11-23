@@ -1,0 +1,49 @@
+{
+  "ids": {
+    "User": 5,
+    "Item": 12,
+    "ItemCategory": 4,
+    "AssocItemItemCategory": 14
+  },
+  "models": {
+    "User": {
+      "1": "{\"UserName\":\"Tarak Patel\",\"Designation\":\"Admin\",\"additionalProp1\":{},\"ID\":1}",
+      "2": "{\"UserName\":\"Chaitali Patel\",\"Designation\":\"Vendor\",\"additionalProp1\":{},\"ID\":2}",
+      "3": "{\"UserName\":\"Joy Patel\",\"Designation\":\"Vendor\",\"additionalProp1\":{},\"ID\":3}",
+      "4": "{\"UserName\":\"Jiyan Patel\",\"Designation\":\"Vendor\",\"additionalProp1\":{},\"ID\":4}"
+    },
+    "Item": {
+      "1": "{\"ItemName\":\"Apple\",\"Quantity\":10,\"AddedBy\":2,\"additionalProp1\":{},\"ID\":1}",
+      "2": "{\"ItemName\":\"Apple\",\"Quantity\":10,\"AddedBy\":2,\"additionalProp1\":{},\"ID\":2}",
+      "3": "{\"ItemName\":\"Banana\",\"Quantity\":30,\"AddedBy\":1,\"additionalProp1\":{},\"ID\":3}",
+      "4": "{\"ItemName\":\"Grapes\",\"Quantity\":30,\"AddedBy\":1,\"additionalProp1\":{},\"ID\":4}",
+      "5": "{\"ItemName\":\"Blueberry\",\"Quantity\":30,\"AddedBy\":3,\"additionalProp1\":{},\"ID\":5}",
+      "6": "{\"ItemName\":\"BlackBerry\",\"Quantity\":30,\"AddedBy\":3,\"additionalProp1\":{},\"ID\":6}",
+      "7": "{\"ItemName\":\"Raspberry\",\"Quantity\":30,\"AddedBy\":4,\"additionalProp1\":{},\"ID\":7}",
+      "8": "{\"ItemName\":\"Onion\",\"Quantity\":30,\"AddedBy\":2,\"additionalProp1\":{},\"ID\":8}",
+      "9": "{\"ItemName\":\"Tomato\",\"Quantity\":30,\"AddedBy\":1,\"additionalProp1\":{},\"ID\":9}",
+      "10": "{\"ItemName\":\"Green Chilli\",\"Quantity\":30,\"AddedBy\":2,\"additionalProp1\":{},\"ID\":10}",
+      "11": "{\"ItemName\":\"Ginger\",\"Quantity\":30,\"AddedBy\":3,\"additionalProp1\":{},\"ID\":11}"
+    },
+    "ItemCategory": {
+      "1": "{\"ItemCategoryName\":\"Vegetable\",\"additionalProp1\":{},\"ID\":1}",
+      "2": "{\"ItemCategoryName\":\"Vegetable\",\"additionalProp1\":{},\"ID\":2}",
+      "3": "{\"ItemCategoryName\":\"Fruit\",\"additionalProp1\":{},\"ID\":3}"
+    },
+    "AssocItemItemCategory": {
+      "1": "{\"ItemID\":1,\"ItemCategoryID\":3,\"additionalProp1\":{},\"ID\":1}",
+      "2": "{\"ItemID\":2,\"ItemCategoryID\":3,\"additionalProp1\":{},\"ID\":2}",
+      "3": "{\"ItemID\":3,\"ItemCategoryID\":3,\"additionalProp1\":{},\"ID\":3}",
+      "4": "{\"ItemID\":4,\"ItemCategoryID\":3,\"additionalProp1\":{},\"ID\":4}",
+      "5": "{\"ItemID\":5,\"ItemCategoryID\":3,\"additionalProp1\":{},\"ID\":5}",
+      "6": "{\"ItemID\":5,\"ItemCategoryID\":2,\"additionalProp1\":{},\"ID\":6}",
+      "7": "{\"ItemID\":7,\"ItemCategoryID\":2,\"additionalProp1\":{},\"ID\":7}",
+      "8": "{\"ItemID\":8,\"ItemCategoryID\":2,\"additionalProp1\":{},\"ID\":8}",
+      "9": "{\"ItemID\":8,\"ItemCategoryID\":3,\"additionalProp1\":{},\"ID\":9}",
+      "10": "{\"ItemID\":9,\"ItemCategoryID\":2,\"additionalProp1\":{},\"ID\":10}",
+      "11": "{\"ItemID\":10,\"ItemCategoryID\":2,\"additionalProp1\":{},\"ID\":11}",
+      "12": "{\"ItemID\":11,\"ItemCategoryID\":2,\"additionalProp1\":{},\"ID\":12}",
+      "13": "{\"ItemID\":8,\"ItemCategoryID\":3,\"additionalProp1\":{},\"ID\":13}"
+    }
+  }
+}
