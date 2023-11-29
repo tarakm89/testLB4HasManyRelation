@@ -30,6 +30,13 @@
       "2": "{\"ItemCategoryName\":\"Vegetable\",\"additionalProp1\":{},\"ID\":2}",
       "3": "{\"ItemCategoryName\":\"Fruit\",\"additionalProp1\":{},\"ID\":3}"
     },
+    "Color": {
+      "1":"{\"color_name\":\"Red\",\"ID\":1}",
+      "2":"{\"color_name\":\"Green\",\"ID\":2}",
+      "3":"{\"color_name\":\"Blue\",\"ID\":3}",
+      "4":"{\"color_name\":\"White\",\"ID\":4}",
+      "5":"{\"color_name\":\"Yellow\",\"ID\":5}"
+    },
     "AssocItemItemCategory": {
       "1": "{\"ItemID\":1,\"ItemCategoryID\":3,\"additionalProp1\":{},\"ID\":1}",
       "2": "{\"ItemID\":2,\"ItemCategoryID\":3,\"additionalProp1\":{},\"ID\":2}",
@@ -44,6 +51,20 @@
       "11": "{\"ItemID\":10,\"ItemCategoryID\":2,\"additionalProp1\":{},\"ID\":11}",
       "12": "{\"ItemID\":11,\"ItemCategoryID\":2,\"additionalProp1\":{},\"ID\":12}",
       "13": "{\"ItemID\":8,\"ItemCategoryID\":3,\"additionalProp1\":{},\"ID\":13}"
+    },
+    "AssocItemItemCategoryColor": {
+      "1": "{\"asoc_item_item_category_id\":1,\"color_id\":1,\"ID\":1}",
+      "2": "{\"asoc_item_item_category_id\":2,\"color_id\":2,\"ID\":2}",
+      "3": "{\"asoc_item_item_category_id\":3,\"color_id\":3,\"ID\":3}",
+      "4": "{\"asoc_item_item_category_id\":4,\"color_id\":4,\"ID\":4}",
+      "5": "{\"asoc_item_item_category_id\":5,\"color_id\":5,\"ID\":5}",
+      "6": "{\"asoc_item_item_category_id\":6,\"color_id\":1,\"ID\":6}",
+      "7": "{\"asoc_item_item_category_id\":7,\"color_id\":2,\"ID\":7}",
+      "8": "{\"asoc_item_item_category_id\":8,\"color_id\":3,\"ID\":8}",
+      "9": "{\"asoc_item_item_category_id\":9,\"color_id\":4,\"ID\":9}",
+      "10": "{\"asoc_item_item_category_id\":10,\"color_id\":5,\"ID\":10}",
+      "11": "{\"asoc_item_item_category_id\":11,\"color_id\":1,\"ID\":11}",
+      "12": "{\"asoc_item_item_category_id\":12,\"color_id\":2,\"ID\":12}"
     }
   }
 }

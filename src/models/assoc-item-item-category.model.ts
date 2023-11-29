@@ -1,6 +1,8 @@
-import {Entity, model, property, belongsTo} from '@loopback/repository';
+import {Entity, model, property, belongsTo, hasMany} from '@loopback/repository';
 import {Item} from './item.model';
 import {ItemCategory} from './item-category.model';
+import {AssocItemItemCategoryColor} from './assoc-item-item-category-color.model';
+import {Color} from './color.model';
 
 @model({settings: {strict: false}})
 export class AssocItemItemCategory extends Entity {
@@ -15,6 +17,15 @@ export class AssocItemItemCategory extends Entity {
 
   @belongsTo(() => ItemCategory, {name: 'ItemCategoryAssoc'})
   ItemCategoryID: number;
+
+  @hasMany(() => AssocItemItemCategoryColor, {keyTo: 'asoc_item_item_category_id'})
+  assocItemItemCategoryColors: AssocItemItemCategoryColor[];
+
+  @hasMany(() => Color, {through: {model: () => AssocItemItemCategoryColor, keyFrom: 'asoc_item_item_category_id', keyTo: 'color_id'}})
+  AsocItemToColor: Color[];
+
+  @hasMany(() => Color, {through: {model: () => AssocItemItemCategoryColor, keyFrom: 'asoc_item_item_category_id', keyTo: 'color_id'}})
+  colors: Color[];
   // Define well-known properties here
 
   // Indexer property to allow additional data
