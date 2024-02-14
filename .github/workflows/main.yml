@@ -2,11 +2,10 @@ name: First Workflow
 on: 
   workflow_dispatch: 
   issue_comment:
-    created:
-      - 'build this please'
+    types: [created]
 jobs:
   first-job:
-    if: ${{ github.event.issue.pull_request }} && contains(github.event.issue.comment.body, 'build this please')
+    if: contains(github.event.comment.body, 'build this please')
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
