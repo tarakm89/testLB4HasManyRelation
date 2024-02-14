@@ -6,7 +6,7 @@ on:
       - 'build this please'
 jobs:
   first-job:
-    if: ${{ github.event.issue.pull_request }} && contains(github.event.comment.body, 'build this please')
+    if: ${{ github.event.issue.pull_request }} && contains(github.event.issue.comment.body, 'build this please')
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
