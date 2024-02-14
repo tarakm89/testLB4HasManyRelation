@@ -1,11 +1,12 @@
 name: First Workflow
 on: 
   workflow_dispatch: 
-  pull_request_review_comment:
-    create:
+  issue_comment:
+    created:
       - 'build this please'
 jobs:
   first-job:
+    if: ${{ github.event.issue.pull_request }}
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
