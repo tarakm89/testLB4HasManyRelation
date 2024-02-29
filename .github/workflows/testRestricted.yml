@@ -11,7 +11,7 @@ jobs:
       - name: Check if Tested label is applied
         run: |
           echo "Checking if 'Tested' label is applied"
-            echo "${{ github.event.pull_request.labels.*.name | join(', ') }}"
+          echo "${{ github.event.pull_request.labels.*.name | join(', ') }}"
           if [[ "${{ github.event.pull_request.labels.*.name | join(', ') }}" == *"Tested"* ]]; then
             echo "Tested label is applied"
           else
