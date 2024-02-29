@@ -11,8 +11,8 @@ jobs:
       - name: Check if Tested label is applied
         run: |
           echo "Checking if 'Tested' label is applied"
-          echo "${{ github.event.pull_request.labels.*.name }}"
-          if [[ "${{ github.event.pull_request.labels.*.name }}" == *"Tested"* ]]; then
+            echo "{{ github.event.pull_request.labels.*.name | join(', ') }}"
+          if [[ "${{ github.event.pull_request.labels.*.name | join(', ') }}" == *"Tested"* ]]; then
             echo "Tested label is applied"
           else
             echo "Tested label is not applied"
@@ -33,8 +33,8 @@ jobs:
       - name: Check if particular reviewer has approved a change or not
         run: |
           echo "Checking if particular reviewer has approved a change or not"
-          echo "${{ github.event.pull_request.requested_reviewers.*.login }}"
-          if [[ ${{ github.event.pull_request.requested_reviewers.*.login }} == "octocat" ]]; then
+          echo "${{ github.event.pull_request.requested_reviewers.*.login | join(', ') }}"
+          if [[ ${{ github.event.pull_request.requested_reviewers.*.login | join(', ') }} == "octocat" ]]; then
             echo "octocat has approved the change"
           else
             echo "octocat has not approved the change"
