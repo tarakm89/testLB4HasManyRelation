@@ -4,7 +4,7 @@ on:
     types: [labeled, unlabeled]
 
 jobs:
-  first-job:
+  Merge-Freeze-Check:
     if: contains(github.event.pull_request.labels.*.name, 'Ready To Merge')
     runs-on: ubuntu-latest
     steps:
