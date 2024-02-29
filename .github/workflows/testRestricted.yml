@@ -16,9 +16,10 @@ jobs:
             echo "Tested label is applied"
           else
             echo "Tested label is not applied"
-            if [[ "join(github.event.pull_request.labels.*.name, ', ')" == *"Testing Required"* ]]; then
+            if [[ "${{ join(github.event.pull_request.labels.*.name, ', ') }}" == *"Testing Required"* ]]; then
               echo "Testing Required label is applied"
             else
+              echo "${{ secrets.GITHUB_TOKEN }}"
               curl \
                 -X POST \
                 -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
